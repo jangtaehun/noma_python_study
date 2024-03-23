@@ -4,8 +4,7 @@ from job_scrap_web3 import extract_jobs_web3
 from job_scrap_berlin import job_detail_scrapper
 from file import save_berlin, save_wework, save_web3
 
-
-app = Flask("new scraper")
+app = Flask(__name__)
 
 wework_db = {}
 web3_db = {}
@@ -110,4 +109,5 @@ def export_berlin():
     )
 
 
-app.run("127.0.0.1", port=5000)
+if __name__ == "__main__":
+    app.run()

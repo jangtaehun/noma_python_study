@@ -8,34 +8,13 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
         />
-        <style>
-            @font-face {
-                font-family: "KakaoBig regular";
-                font-style: normal;
-                font-weight: normal;
-                font-display: swap;
-                src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
-                        format("woff2"),
-                    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff)
-                        format("woff");
-            }
-            @font-face {
-                font-family: "KakaoBig Bold";
-                font-style: normal;
-                font-weight: bold;
-                font-display: swap;
-                src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
-                        format("woff2"),
-                    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
-                        format("woff");
-            }
-        </style>
+        <link rel="stylesheet" href="../static/style.css" />
     </head>
     <body>
         <main class="container">
             <h1>Welcome to zzangtae's Job Scrapper</h1>
             <h4>What do you want?</h4>
-            <form action="/search_wework">
+            <form action="/search_wework" class="pico">
                 <input
                     type="text"
                     name="keyword"
